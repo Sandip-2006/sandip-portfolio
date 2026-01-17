@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sandipkumar Rathod — 3D Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ SEO -->
+  <meta name="description"
+    content="Sandip Rathod is a Full Stack Developer specializing in Python, Django, React, and Next.js. Explore real-world projects, backend APIs, and scalable web applications." />
+
+  <link rel="canonical" href="https://yourdomain.com/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Preloads -->
+  <link rel="preload" as="image" href="assets/sandip-photo.webp">
+</head>
+
+
+<body>
+  <!-- Scroll bar -->
+  <div class="scroll-indicator">
+    <div class="scroll-indicator-inner" id="scrollBar"></div>
+  </div>
+
+  <div class="wrapper">
+    <main id="main-content">
+
+      <!-- NAVBAR -->
+      <nav class="nav">
+        <div class="nav-logo">
+          <span>SR</span>
+          <div class="nav-name gradient-text">Sandip Rathod</div>
+        </div>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-text reveal">
+          <div class="hero-subtitle">
+            Full Stack Developer · Python · Django · React · Next.js
+          </div>
+
+
+          <h1>
+            Hi, I'm
+            <span class="hero-gradient-text type-text" data-text="Sandip Rathod"></span>
+          </h1>
+
+          <p>
+            Full Stack Developer with hands-on experience in designing and developing
+            scalable, secure and production-ready web applications.
+            I work across the full stack using Python, Django, REST APIs on the backend
+            and React with Next.js on the frontend.
+            Currently, I am gaining industry experience as a Backend Developer Intern,
+            contributing to real-world systems, API development and backend architecture.
+          </p>
+
+
+          <div class="hero-tags">
+            <span class="pill">REST API Design</span>
+            <span class="pill">Backend Architecture</span>
+            <span class="pill">Full Stack Integration</span>
+            <span class="pill">Database Design</span>
+            <span class="pill">Authentication & Authorization</span>
+          </div>
+
+
+          <div class="hero-actions">
+            <button class="btn btn-primary"
+              onclick="document.querySelector('#projects').scrollIntoView({behavior:'smooth'})">
+              <span>View Projects</span> <span class="btn-icon">↗</span>
+            </button>
+
+            <button class="btn btn-ghost"
+              onclick="document.querySelector('#resume').scrollIntoView({behavior:'smooth'})">
+              <span>View Resume</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="avatar-wrapper tilt-card">
+            <svg class="avatar-ring" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="90" fill="none" stroke="url(#ringGradient)" stroke-width="0.5"
+                stroke-dasharray="2 4" />
+              <defs>
+                <linearGradient id="ringGradient">
+                  <stop offset="0%" stop-color="#38bdf8" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+
+            <div class="avatar-img">
+              <img src="assets/sandip-photo.webp" alt="Sandip Rathod – Full Stack Developer" width="320" height="320"
+                fetchpriority="high" decoding="async">
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ABOUT -->
+      <section id="about" class="reveal">
+        <div class="section-heading">
+          <h1 class="section-title">About Me</h1>
+          <p class="section-sub">Developer mindset · Real-world experience</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card">
+            <p>
+              I am a Full Stack Developer and BCA student (2023–2026) with hands-on experience
+              building real-world web applications.
+              I focus on writing clean, scalable and maintainable code while solving
+              practical problems through technology.
+            </p>
+
+            <p style="margin-top:0.9rem;">
+              I currently work as a <strong>Backend Developer Intern at Byto</strong>,
+              where I contribute to backend logic, API development and system-level features
+              using <strong>Python, Django and REST APIs</strong>.
+              Alongside backend development, I actively build modern frontend interfaces
+              using <strong>React and Next.js</strong>.
+            </p>
+
+            <div class="pill-row">
+              <span class="pill">Full Stack Development</span>
+              <span class="pill">Backend APIs & Logic</span>
+              <span class="pill">React & Next.js Frontend</span>
+              <span class="pill">Problem Solving</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <p><strong>Quick Snapshot</strong></p>
+
+            <div class="pill-row">
+              <span class="pill">💼 Backend Developer Intern · Byto</span>
+              <span class="pill">📚 BCA (Computer Applications)</span>
+              <span class="pill">🌏 India</span>
+              <span class="pill">🏫 Hemchandracharya North Gujarat University</span>
+              <!-- <span class="pill">🌏 India</span> -->
+            </div>
+
+
+            <p style="margin-top:0.9rem;">
+            <p style="margin-top:0.9rem;">
+              I enjoy working on production-level features, improving backend performance,
+              collaborating with teams, and continuously strengthening my full stack
+              development skills to grow as a professional software developer.
+            </p>
+
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="experience" class="reveal">
+        <div class="section-heading">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-sub">Industry exposure & professional work</p>
+        </div>
+
+        <div class="card">
+          <h3>Backend Developer Intern</h3>
+          <p><strong>Byto</strong> · Internship</p>
+
+          <p style="margin-top:0.6rem;">
+            Currently working as a Backend Developer Intern, contributing to the development
+            of backend systems for real-world applications.
+            My work involves building RESTful APIs, implementing backend business logic,
+            integrating databases and collaborating with the team to deliver
+            scalable and secure application features using Python and Django.
+          </p>
+
+          <ul style="margin-top:0.8rem; padding-left:1.2rem;">
+            <li>Developing and maintaining REST APIs using Django and Django REST Framework</li>
+            <li>Implementing backend workflows and application logic</li>
+            <li>Working with PostgreSQL for relational data storage and management</li>
+            <li>Testing, debugging and improving backend performance</li>
+            <li>Collaborating with frontend developers and team members</li>
+          </ul>
+
+          <div class="pill-row" style="margin-top:0.8rem;">
+            <span class="pill">Python</span>
+            <span class="pill">Django</span>
+            <span class="pill">Django REST Framework</span>
+            <span class="pill">REST APIs</span>
+            <span class="pill">PostgreSQL</span>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- SKILLS -->
+      <section id="skills" class="reveal">
+        <div class="section-heading">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-sub">Technologies I work with</p>
+        </div>
+
+        <div class="skills-grid icons-grid">
+
+
+          <!-- Frontend -->
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+              width="48" height="48" loading="lazy">
+            <span>HTML5</span>
+          </div>
+
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="48"
+              height="48" loading="lazy">
+            <span>CSS3</span>
+          </div>
+
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" width="48" height="48" loading="lazy">
+            <span>JavaScript</span>
+          </div>
+
+
+
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+              width="48" height="48" loading="lazy">
+            <span>React</span>
+          </div>
+
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"
+              width="48" height="48" loading="lazy">
+            <span>Next.js</span>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+              width="48" height="48" loading="lazy">
+            <span>Python</span>
+          </div>
+
+          <div class="skill-icon-card">
+            <img src="assets/django.svg" alt="Django" width="48" height="48" loading="lazy">
+            <span>Django</span>
+          </div>
+
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" width="48"
+              height="48" loading="lazy">
+            <span>PHP</span>
+          </div>
+
+
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel"
+              width="48" height="48" loading="lazy">
+            <span>Laravel</span>
+          </div>
+
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"
+              width="48" height="48" loading="lazy">
+            <span>Node.js</span>
+          </div>
+
+          <!-- Database -->
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+              width="48" height="48" loading="lazy">
+            <span>MySQL</span>
+          </div>
+
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
+              width="48" height="48" loading="lazy">
+            <span>MongoDB</span>
+          </div>
+
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL" width="48" height="48" loading="lazy">
+            <span>PostgreSQL</span>
+          </div>
+
+
+          <!-- Tools -->
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="48"
+              height="48" loading="lazy">
+            <span>Git</span>
+          </div>
+
+          <div class="skill-icon-card">
+            <div class="img">
+              <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32"
+                data-view-component="true" class="octicon octicon-mark-github v-align-middle" style="fill:#fff">
+                <path
+                  d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z">
+                </path>
+              </svg>
+            </div>
+            <span>GitHub</span>
+          </div>
+
+
+
+          <div class="skill-icon-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"
+              width="48" height="48" loading="lazy">
+            <span>Linux</span>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- PROJECTS -->
+      <section id="projects" class="reveal">
+        <div class="section-heading">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-sub">Real-world applications & academic work</p>
+        </div>
+
+        <div class="projects-grid-modern">
+
+          <!-- Project 1 -->
+          <article class="project-card-modern tilt-card">
+            <div class="project-image">
+              <img src="assets/e-commerce.webp" alt="Pizza Delivery App" width="400" height="250" loading="lazy"
+                decoding="async">
+
+            </div>
+            <div class="project-body">
+              <span class="project-badge">Full Stack</span>
+              <h3>Pizza Delivery System</h3>
+              <p class="project-desc">
+                Online pizza ordering system with user authentication, cart, order tracking and admin management.
+              </p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/UPDATE_ME/pizza-delivery" target="_blank">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card-modern tilt-card">
+            <div class="project-image">
+              <img src="assets/online_gram.webp" alt="Online Gram Panchayat" width="400" height="250" loading="lazy"
+                decoding="async">
+            </div>
+            <div class="project-body">
+              <span class="project-badge">Gov Tech</span>
+              <h3>Online Gram Panchayat Portal</h3>
+              <p class="project-desc">
+                Digital village platform for complaints, schemes, notices and local services.
+              </p>
+              <div class="project-tech">
+                <span>Django</span><span>Python</span><span>MySQL</span><span>REST</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/UPDATE_ME/gram-panchayat" target="_blank">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card-modern tilt-card">
+            <div class="project-image">
+              <img src="assets/idiscuss.webp" alt="iDiscuss Forum" width="400" height="250" loading="lazy"
+                decoding="async">
+            </div>
+            <div class="project-body">
+              <span class="project-badge">Backend</span>
+              <h3>iDiscuss Forum</h3>
+              <p class="project-desc">
+                Secure discussion forum with authentication, categories and threaded conversations.
+              </p>
+              <div class="project-tech">
+                <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/UPDATE_ME/idiscuss" target="_blank">Code</a>
+              </div>
+            </div>
+          </article>
+
+
+
+        </div>
+      </section>
+
+
+      <section id="resume" class="reveal">
+        <div class="section-heading">
+          <h2 class="section-title">Resume & Education</h2>
+          <p class="section-sub">Professional summary, academics and highlights</p>
+        </div>
+
+        <div class="resume-grid">
+          <!-- LEFT CARD -->
+          <div class="card resume-highlights">
+            <p><strong>Profile Summary</strong></p>
+            <ul>
+              <li>Full Stack Developer with hands-on experience in building web applications using Python, Django, React
+                and Next.js.</li>
+              <li>Currently working as a Backend Developer Intern at Byto, contributing to real-world backend systems.
+              </li>
+              <li>Strong experience in developing RESTful APIs using Django REST Framework.</li>
+              <li>Worked with PostgreSQL for relational data handling and backend integration.</li>
+              <li>Built and maintained multiple academic and personal projects focused on real-life use cases.</li>
+            </ul>
+
+            <p style="margin-top:0.9rem;"><strong>Current Focus</strong></p>
+            <ul>
+              <li>Developing scalable backend APIs using Django & Django REST Framework.</li>
+              <li>Improving backend performance, database design and API structure.</li>
+              <li>Working with PostgreSQL, Git, Linux and deployment workflows.</li>
+              <li>Strengthening full stack skills by integrating backend systems with modern frontends.</li>
+            </ul>
+
+            <!-- Resume Download -->
+            <div style="margin-top:1.1rem; display:flex; flex-wrap:wrap; gap:0.6rem;">
+              <button class="btn btn-primary" onclick="window.open('./Sandipkumar_Rathod_Resume.pdf','_blank')">
+                <span>Download Resume (PDF)</span> <span class="btn-icon">⬇</span>
+              </button>
+              <button class="btn btn-ghost"
+                onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">
+                <span>Contact for Opportunities</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- RIGHT CARD (NO CHANGE NEEDED) -->
+          <div class="card">
+            <p><strong>Education Timeline</strong></p>
+            <div class="timeline" style="margin-top:0.8rem;">
+              <div class="timeline-item">
+                <div class="timeline-title">Bachelor of Computer Application (BCA)</div>
+                <div class="timeline-sub">
+                  Hemchandracharya North Gujarat University
+                </div>
+                <div class="timeline-meta">2023 – 2026 · Current</div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-title">12th (Higher Secondary)</div>
+                <div class="timeline-sub">
+                  Shree C V Gandhi High School · 80.80%
+                </div>
+                <div class="timeline-meta">Completed · 2023</div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-title">10th (Secondary)</div>
+                <div class="timeline-sub">
+                  Shree C V Gandhi High School · 62.66%
+                </div>
+                <div class="timeline-meta">Completed · 2021</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" class="reveal">
+        <div class="section-heading">
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-sub">Verified courses & credentials</p>
+        </div>
+
+        <div class="cert-grid-modern">
+
+          <!-- Certificate 1 -->
+          <div class="cert-card-modern">
+            <div class="cert-image">
+              <div class="cert-image" onclick="openCert('assets/certificate.jpg')">
+                <img src="assets/certificate.jpg" alt="C Programming Certificate" width="300" height="200"
+                  loading="lazy">
+              </div>
+
+            </div>
+            <div class="cert-body">
+              <span class="cert-tag">Programming</span>
+              <h3>C Programming</h3>
+              <p class="cert-provider">Great Learning · 2024</p>
+
+              <button class="cert-btn" onclick="openCert('assets/certificate.jpg')">
+                View Certificate
+              </button>
+            </div>
+          </div>
+
+          <!-- Certificate 2 -->
+          <div class="cert-card-modern">
+            <div class="cert-image">
+              <div class="cert-image" onclick="openCert('assets/certificate2.jpg')">
+                <img src="assets/certificate2.jpg" alt="Python Certificate" width="300" height="200" loading="lazy">
+              </div>
+
+            </div>
+            <div class="cert-body">
+              <span class="cert-tag">Backend</span>
+              <h3>Python Programming</h3>
+              <p class="cert-provider">Self Learning · 2024</p>
+
+              <button class="cert-btn" onclick="openCert('assets/certificate2.jpg')">
+                View Certificate
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- CERTIFICATE MODAL -->
+      <div class="cert-modal" id="certModal">
+        <span class="cert-close" onclick="closeCert()">×</span>
+        <img id="certModalImg" src="" alt="Certificate Preview">
+      </div>
+
+
+
+
+      <!-- CONTACT -->
+      <section id="contact" class="reveal">
+        <div class="section-heading">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-sub">Open for internships, roles & collaborations</p>
+        </div>
+
+        <div class="contact-grid-modern">
+
+          <!-- LEFT CONTENT -->
+          <div class="contact-left">
+
+            <!-- <p class="contact-intro">
+            Feel free to reach out for internships, junior developer roles,
+            freelance work or collaboration on meaningful projects.
+            I usually respond within 24 hours.
+          </p> -->
+
+            <div class="contact-list">
+
+              <!-- Phone -->
+              <a href="tel:+919328621591" class="contact-item">
+                <span class="contact-icon">
+                  <!-- phone svg -->
+                  <svg viewBox="0 0 24 24">
+                    <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2
+              1 .3 2 .5 3 .5.7 0 1.4.6 1.4 1.4V21c0 .8-.6 1.4-1.4 1.4
+              C9.9 22.4 1.6 14.1 1.6 3.4 1.6 2.6 2.2 2 3 2h3.4
+              c.8 0 1.4.6 1.4 1.4 0 1 .2 2 .5 3 .1.4 0 .9-.2 1.2L6.6 10.8z" />
+                  </svg>
+                </span>
+                <div class="contact-text">
+                  <span>Phone</span>
+                  <strong>+91 9328621591</strong>
+                </div>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:sandip97316@gmail.com" class="contact-item">
+                <span class="contact-icon">
+                  <!-- email svg -->
+                  <svg viewBox="0 0 24 24">
+                    <path d="M2 4h20v16H2V4zm10 7 8-5H4l8 5zm0 2-8-5v10h16V8l-8 5z" />
+                  </svg>
+                </span>
+                <div class="contact-text">
+                  <span>Email</span>
+                  <strong>sandip97316@gmail.com</strong>
+                </div>
+              </a>
+
+              <!-- Location -->
+
+
+              <!-- GitHub -->
+              <a href="https://github.com/UPDATE_ME" target="_blank" class="contact-item">
+                <span class="contact-icon">
+                  <!-- github svg -->
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 1C5.9 1 1 5.9 1 12c0 4.9 3.2 9.1 7.6 10.5
+              .6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3
+              -.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7
+              1.1.1 1.7 1.2 1.7 1.2 1 .1 2.6.8 3.2-.6
+              .1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.2-5.1-5.4
+              0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-2.9
+              0 0 .9-.3 3 1.1.9-.2 1.9-.4 2.8-.4
+              .9 0 1.9.1 2.8.4 2.1-1.4 3-1.1 3-1.1
+              .6 1.5.2 2.6.1 2.9.7.8 1.1 1.8 1.1 3
+              0 4.2-2.6 5.1-5.1 5.4.4.3.8 1 .8 2v3
+              c0 .3.2.7.8.6C19.8 21.1 23 16.9 23 12
+              23 5.9 18.1 1 12 1z" />
+                  </svg>
+                </span>
+                <div class="contact-text">
+                  <span>GitHub</span>
+                  <strong>github.com/sandip</strong>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/UPDATE_ME" target="_blank" class="contact-item">
+                <span class="contact-icon">
+                  <!-- linkedin svg -->
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4.98 3.5c0 1.4-1.1 2.5-2.5 2.5S0 4.9 0 3.5
+              1.1 1 2.5 1s2.48 1.1 2.48 2.5zM0 8h5v16H0V8zm7.5
+              0h4.8v2.2h.1c.7-1.3 2.3-2.6 4.7-2.6
+              5 0 5.9 3.3 5.9 7.6V24h-5v-7.9c0-1.9
+              0-4.3-2.6-4.3-2.6 0-3 2-3 4.2V24h-5V8z" />
+                  </svg>
+                </span>
+                <div class="contact-text">
+                  <span>LinkedIn</span>
+                  <strong>linkedin.com/in/sandip</strong>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- RIGHT FORM (unchanged) -->
+          <form class="contact-form-modern" action="https://formspree.io/f/XXXXYYYY" method="POST">
+            <div class="form-title">Send a Message</div>
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" placeholder="Briefly describe your opportunity or message" required></textarea>
+
+            <button type="submit" class="btn btn-primary"><span>Send Message</span></button>
+            <div class="form-note">Messages are delivered directly to my email.</div>
+          </form>
+
+        </div>
+      </section>
+
+
+
+
+      <footer>
+        © <span id="year"></span> Sandipkumar Maheshbhi Rathod · Built with HTML, CSS & JavaScript
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>
