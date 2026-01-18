@@ -26,6 +26,8 @@
 
 
 <body>
+  <div id="top"></div>
+
   <!-- Scroll bar -->
   <div class="scroll-indicator">
     <div class="scroll-indicator-inner" id="scrollBar"></div>
@@ -36,11 +38,13 @@
 
       <!-- NAVBAR -->
       <nav class="nav">
-        <div class="nav-logo">
+        <!-- LOGO (HOME LINK) -->
+        <a href="#top" class="nav-logo">
           <span>SR</span>
           <div class="nav-name gradient-text">Sandip Rathod</div>
-        </div>
+        </a>
 
+        <!-- DESKTOP LINKS -->
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
@@ -49,7 +53,28 @@
           <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
         </div>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
       </nav>
+
+      <div class="nav-overlay" id="navOverlay"></div>
+
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+
 
       <!-- HERO -->
       <section class="hero">
@@ -369,8 +394,28 @@
                 <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/UPDATE_ME/pizza-delivery" target="_blank">Code</a>
+                <a href="https://github.com/Sandip-2006/pizza-ecommerce-django" target="_blank" class="project-link">
+
+                  <!-- GitHub Icon -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 1C5.9 1 1 5.9 1 12c0 4.9 3.2 9.1 7.6 10.5
+      .6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3
+      -.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7
+      1.1.1 1.7 1.2 1.7 1.2 1 .1 2.6.8 3.2-.6
+      .1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.2-5.1-5.4
+      0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-2.9
+      0 0 .9-.3 3 1.1.9-.2 1.9-.4 2.8-.4
+      .9 0 1.9.1 2.8.4 2.1-1.4 3-1.1 3-1.1
+      .6 1.5.2 2.6.1 2.9.7.8 1.1 1.8 1.1 3
+      0 4.2-2.6 5.1-5.1 5.4.4.3.8 1 .8 2v3
+      c0 .3.2.7.8.6C19.8 21.1 23 16.9 23 12
+      23 5.9 18.1 1 12 1z" />
+                  </svg>
+
+                  <span>Code</span>
+                </a>
               </div>
+
             </div>
           </article>
 
@@ -390,7 +435,26 @@
                 <span>Django</span><span>Python</span><span>MySQL</span><span>REST</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/UPDATE_ME/gram-panchayat" target="_blank">Code</a>
+                <a href="https://github.com/Sandip-2006/online-gram-panchayat" target="_blank" class="project-link">
+
+                  <!-- GitHub Icon -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 1C5.9 1 1 5.9 1 12c0 4.9 3.2 9.1 7.6 10.5
+      .6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3
+      -.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7
+      1.1.1 1.7 1.2 1.7 1.2 1 .1 2.6.8 3.2-.6
+      .1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.2-5.1-5.4
+      0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-2.9
+      0 0 .9-.3 3 1.1.9-.2 1.9-.4 2.8-.4
+      .9 0 1.9.1 2.8.4 2.1-1.4 3-1.1 3-1.1
+      .6 1.5.2 2.6.1 2.9.7.8 1.1 1.8 1.1 3
+      0 4.2-2.6 5.1-5.1 5.4.4.3.8 1 .8 2v3
+      c0 .3.2.7.8.6C19.8 21.1 23 16.9 23 12
+      23 5.9 18.1 1 12 1z" />
+                  </svg>
+
+                  <span>Code</span>
+                </a>
               </div>
             </div>
           </article>
@@ -411,7 +475,26 @@
                 <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/UPDATE_ME/idiscuss" target="_blank">Code</a>
+                <a href="https://github.com/Sandip-2006/iDiscuss" target="_blank" class="project-link">
+
+                  <!-- GitHub Icon -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 1C5.9 1 1 5.9 1 12c0 4.9 3.2 9.1 7.6 10.5
+      .6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3
+      -.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7
+      1.1.1 1.7 1.2 1.7 1.2 1 .1 2.6.8 3.2-.6
+      .1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.2-5.1-5.4
+      0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-2.9
+      0 0 .9-.3 3 1.1.9-.2 1.9-.4 2.8-.4
+      .9 0 1.9.1 2.8.4 2.1-1.4 3-1.1 3-1.1
+      .6 1.5.2 2.6.1 2.9.7.8 1.1 1.8 1.1 3
+      0 4.2-2.6 5.1-5.1 5.4.4.3.8 1 .8 2v3
+      c0 .3.2.7.8.6C19.8 21.1 23 16.9 23 12
+      23 5.9 18.1 1 12 1z" />
+                  </svg>
+
+                  <span>Code</span>
+                </a>
               </div>
             </div>
           </article>
@@ -507,8 +590,8 @@
           <!-- Certificate 1 -->
           <div class="cert-card-modern">
             <div class="cert-image">
-              <div class="cert-image" onclick="openCert('assets/certificate.jpg')">
-                <img src="assets/certificate.jpg" alt="C Programming Certificate" width="300" height="200"
+              <div class="cert-image" onclick="openCert('assets/C_Programming_Certificate.jpg')">
+                <img src="assets/C_Programming_Certificate.jpg" alt="C Programming Certificate" width="300" height="200"
                   loading="lazy">
               </div>
 
@@ -518,7 +601,7 @@
               <h3>C Programming</h3>
               <p class="cert-provider">Great Learning · 2024</p>
 
-              <button class="cert-btn" onclick="openCert('assets/certificate.jpg')">
+              <button class="cert-btn" onclick="openCert('assets/C_Programming_Certificate.jpg')">
                 View Certificate
               </button>
             </div>
@@ -535,13 +618,36 @@
             <div class="cert-body">
               <span class="cert-tag">Backend</span>
               <h3>Python Programming</h3>
-              <p class="cert-provider">Self Learning · 2024</p>
+              <p class="cert-provider">Self Learning · 2025</p>
 
               <button class="cert-btn" onclick="openCert('assets/certificate2.jpg')">
                 View Certificate
               </button>
             </div>
           </div>
+
+          <!-- Certificate : Independence Day Quiz -->
+          <div class="cert-card-modern">
+            <div class="cert-image">
+              <div class="cert-image" onclick="openCert('assets/independence_quiz_2025.jpg')">
+                <img src="assets/independence_quiz_2025.jpg" alt="Indian Independence Day Quiz 2025 Certificate"
+                  width="300" height="200" loading="lazy">
+              </div>
+            </div>
+
+            <div class="cert-body">
+              <span class="cert-tag">Government · MyGov</span>
+              <h3>Indian Independence Day Quiz – 2025</h3>
+              <p class="cert-provider">
+                Ministry of Social Justice & Empowerment, Govt. of India
+              </p>
+
+              <button class="cert-btn" onclick="openCert('assets/independence_quiz_2025.jpg')">
+                View Certificate
+              </button>
+            </div>
+          </div>
+
 
 
         </div>
@@ -611,7 +717,7 @@
 
 
               <!-- GitHub -->
-              <a href="https://github.com/UPDATE_ME" target="_blank" class="contact-item">
+              <a href="https://github.com/Sandip-2006" target="_blank" class="contact-item">
                 <span class="contact-icon">
                   <!-- github svg -->
                   <svg viewBox="0 0 24 24">
@@ -631,12 +737,12 @@
                 </span>
                 <div class="contact-text">
                   <span>GitHub</span>
-                  <strong>github.com/sandip</strong>
+                  <strong>github.com/Sandip-2006</strong>
                 </div>
               </a>
 
               <!-- LinkedIn -->
-              <a href="https://www.linkedin.com/in/UPDATE_ME" target="_blank" class="contact-item">
+              <a href="https://www.linkedin.com/in/sandip-rathod-485637317/" target="_blank" class="contact-item">
                 <span class="contact-icon">
                   <!-- linkedin svg -->
                   <svg viewBox="0 0 24 24">
@@ -649,7 +755,7 @@
                 </span>
                 <div class="contact-text">
                   <span>LinkedIn</span>
-                  <strong>linkedin.com/in/sandip</strong>
+                  <strong>linkedin.com/in/sandip-rathod-485637317</strong>
                 </div>
               </a>
 

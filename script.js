@@ -112,4 +112,27 @@ function typeEffect() {
 
 typeEffect();
 
+const navToggle = document.getElementById("navToggle");
+const mobileNav = document.getElementById("mobileNav");
+const navOverlay = document.getElementById("navOverlay");
 
+function closeMenu() {
+  mobileNav.classList.remove("active");
+  navOverlay.classList.remove("active");
+  navToggle.classList.remove("active");
+}
+
+navToggle.addEventListener("click", (e) => {
+  e.stopPropagation();
+  mobileNav.classList.toggle("active");
+  navOverlay.classList.toggle("active");
+  navToggle.classList.toggle("active");
+});
+
+// overlay click → close
+navOverlay.addEventListener("click", closeMenu);
+
+// link click → close
+mobileNav.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", closeMenu);
+});
