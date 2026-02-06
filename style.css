@@ -1287,6 +1287,10 @@ footer {
     opacity: 0;
     pointer-events: none;
     transition: all 0.35s ease;
+    white-space: nowrap;
+    max-width: 95px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* HOVER */
@@ -1863,4 +1867,8 @@ footer {
   .nav-toggle {
     display: flex;
   }
+}
+
+.skill-icon-card img {
+  filter: brightness(1.3);
 }
