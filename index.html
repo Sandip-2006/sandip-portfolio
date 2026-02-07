@@ -15,7 +15,13 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  </noscript>
+
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
@@ -142,7 +148,7 @@
 
 
             <div class="avatar-img">
-              <img src="assets/sandip_image.png" alt="Sandip Rathod – Full Stack Developer" width="320" height="320"
+              <img src="assets/sandip_image.webp" alt="Sandip Rathod – Full Stack Developer" width="320" height="320"
                 fetchpriority="high" decoding="async">
             </div>
           </div>
@@ -222,7 +228,8 @@
           <h3>Backend Developer Intern</h3>
 
           <p style="display:flex; justify-content:space-between; flex-wrap:wrap;">
-            <strong>Byto</strong>
+            <strong>Byto Gaman Transport Private Limited</strong>
+
             <span style="opacity:0.7;">Sep 2025 – Present</span>
           </p>
 
@@ -797,7 +804,8 @@
       <section id="contact" class="reveal">
         <div class="section-heading">
           <h2 class="section-title">Contact</h2>
-          <p class="section-sub">Open for internships, roles & collaborations</p>
+          <p class="section-sub">Open for full-time roles, job opportunities & collaborations</p>
+
         </div>
 
         <div class="contact-grid-modern">
@@ -894,7 +902,7 @@
           </div>
 
           <!-- RIGHT FORM (unchanged) -->
-          <form class="contact-form-modern" action="https://formspree.io/f/XXXXYYYY" method="POST">
+          <form class="contact-form-modern">
             <div class="form-title">Send a Message</div>
             <input type="text" name="name" placeholder="Your name" required>
             <input type="email" name="email" placeholder="Your email" required>
